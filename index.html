@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.menu {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+.menu a:hover {
+    border-bottom: 2px solid white; 
+}
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif; 
+
+}
+.container {
+    background-color: #303030; 
+    height: 100vh;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.logo img {
+    width: 120px; 
+    padding-left: 100px;
+}
+.sanpham-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sanpham {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 23%; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+.sanpham:hover {
+    transform: scale(1.05);
+}
+.sanpham img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.sanpham h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.sanpham .price {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.sanpham .loai {
+    font-size: 0.9rem;
+    color: gray;
+}
+</style>
+</head>
+<body>
+<section class="container">
+    <div class="logo">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/10/fashion_logo.png" alt="Kalium Logo">
+    </div>
+    <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Product</a>
+            <a href="#">News</a>
+            <a href="#">Pages</a>
+            <a href="#">Buy Now</a>
+    </div>
+</section>
+<main>
+<div class="sanpham-container">
+    <div class="sanpham">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_2-550x681.jpg" alt="Broken T Shirt"> <!-- Thay thế URL ảnh -->
+        <h2>Broken T Shirt</h2>
+        <div class="price">$9</div>
+        <div class="loai">Men, T-Shirts</div>
+    </div>
+    <div class="sanpham">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/knickerboxer_1-550x681.jpg" alt="Knickerboxer"> <!-- Thay thế URL ảnh -->
+        <h2>Knickerboxer</h2>
+        <div class="price">$25</div>
+        <div class="loai">Men, Sweaters</div>
+    </div>
+    <div class="sanpham">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/studio_belt_4-820x1016.jpg" alt="Studio Belt"> <!-- Thay thế URL ảnh -->
+        <h2>Studio Belt</h2>
+        <div class="price">$7</div>
+        <div class="loai">Accessories</div>
+    </div> 
+</div>
+</main>
+</body>
+</html>
